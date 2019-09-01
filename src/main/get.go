@@ -9,7 +9,7 @@ import (
 	"net/http"
 )
 
-var character = "ansible"
+var character = "deeps"
 var fields = "gear"
 var region = "us"
 var realm = "barthilas"
@@ -50,5 +50,5 @@ func main() {
 
 	json.NewDecoder(resp.Body).Decode(&gear)
 
-	fmt.Println(gear.Name, gear.Gear.ItemLevelEquipped)
+	fmt.Println(gear.Name, "iLVL: ", gear.Gear.ItemLevelEquipped)
 }
